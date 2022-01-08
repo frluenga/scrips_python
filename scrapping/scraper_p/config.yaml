@@ -1,0 +1,7 @@
+news_page:
+  laopinion:
+    url: 'https://www.laopinion.com.co'
+    url_section: 'https://www.laopinion.com.co/tecnologia'
+    queries:
+      section_links: '//li[@class="nav-item menu-item--expanded dropdown"]/a/@href'
+      article_links: '//span[@class="field-content"]/a/@href'

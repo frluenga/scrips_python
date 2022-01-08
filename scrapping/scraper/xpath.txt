@@ -1,0 +1,4 @@
+links = //h2[not(@class)]/a/@href
+Titulo = //h2[not(@class)]/span[1]/text()
+Resumen = //div[@class="lead"]/p/text()
+Cuerpo = //div[@class="html-content"]/p[not(@class)]/text()
