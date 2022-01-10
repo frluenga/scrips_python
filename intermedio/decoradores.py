@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def messure_time(function):
     def wrapper(*args,**kwargs):
         import time
@@ -15,6 +17,23 @@ def suma(a,b):
     import time
     time.sleep(1)
     return a + b
+
+## Otro
+
+def execution_time(func):
+    def wrapper(*args,**kwargs):
+        initial_time = datetime.now()
+        func(*args,**kwargs)
+        final_time = datetime.now()
+        time_elapsed = final_time - initial_time
+        print("Pasaron "  + str(time_elapsed.total_seconds()))
+    return wrapper
+
+@execution_time
+def random_func():
+    for _ in range(1,1000000):
+        pass
+
 
 ## un decorador que recibe tambien parametro
 
@@ -44,3 +63,9 @@ def debug(f):
         print(f"Function {f.__name__}() called!")
         return f(*args, **kwargs)
     return new_function
+
+def run():
+    random_func()
+
+if __name__ == '__main__':
+    run()

@@ -1,6 +1,7 @@
-./POO/borracho/env
-./intermedio/env
-./scrapping/Extraction/env
-./scrapping/scraper/env
-./scrapping/scraper_p/env
-./scrapping/web_scraper/env
+POO/borracho/venv/
+intermedio/venv/
+scrapping/Extraction/venv/
+scrapping/scraper/venv/
+scrapping/scraper_p/venv/
+scrapping/web_scraper/venv/
+Profesional/venv/
